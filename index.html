@@ -9,7 +9,18 @@
 
 <body>
     <div id="app">
-
+        <div class="flex-table">
+            <div class="flex-column-day">
+                <div class="day-card">
+                    <h2>Monday</h2>
+                </div>
+                <ul>
+                    <li v-for="time in times">
+                        <p>{{ time.hour }}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.7/dist/vue.js"></script>
