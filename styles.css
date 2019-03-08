@@ -1,24 +1,48 @@
-li {
-    list-style-type: none;
+body {
+  background-color: #EEEEEE;
+}
+
+.display {
+  width: 100vw;
 }
 
 .flex-table {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 150px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 60px 100px;
 }
 
 .flex-column-day {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: -320px;
 }
 
 .day-card {
-    display: flex;
-    background-color: white;
-    align-self: center;
+  width: 120px;
+  background-color: white;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.time-card {
+  width: 60px;
+  background-color: white;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
 }

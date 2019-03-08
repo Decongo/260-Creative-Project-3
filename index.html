@@ -2,29 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Creative Project 3</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Creative Project 3</title>
 </head>
 
 <body>
-    <div id="app">
-        <div class="flex-table">
-            <div class="flex-column-day">
-                <div class="day-card">
-                    <h2>Monday</h2>
-                </div>
-                <ul>
-                    <li v-for="time in times">
-                        <p>{{ time.hour }}</p>
-                    </li>
-                </ul>
-            </div>
+  <div id="app">
+    <div class="display">
+      <div class="flex-table">
+        <div class="flex-column-day">
+          <div class="day-card">
+            <h2>Monday</h2>
+          </div>
+          <div v-for="time in times" class="time-card">
+            <p>{{ time.hour }}</p>
+          </div>
         </div>
+        <div class="flex-column-day">
+          <div class="day-card">
+            <h2>Tuesday</h2>
+          </div>
+          <div v-for="time in times" class="time-card">
+            <p>{{ time.hour }}</p>
+          </div>
+        </div>
+        <div class="flex-column-day">
+          <div class="day-card">
+            <h2>Wednesday</h2>
+          </div>
+          <div v-for="time in times" class="time-card">
+            <p>{{ time.hour }}</p>
+          </div>
+        </div>
+        <div class="flex-column-day">
+          <div class="day-card">
+            <h2>Thursday</h2>
+          </div>
+          <div v-for="time in times" class="time-card">
+            <p>{{ time.hour }}</p>
+          </div>
+        </div>
+        <div class="flex-column-day">
+          <div class="day-card">
+            <h2>Friday</h2>
+          </div>
+          <div v-for="time in times" class="time-card">
+            <p>{{ time.hour }}</p>
+          </div>
+        </div>
+        <div class="flex-column-day">
+          <div class="day-card">
+            <h2>Saturday</h2>
+          </div>
+          <div v-for="time in times" class="time-card">
+            <p>{{ time.hour }}</p>
+          </div>
+        </div>
+        <div class="flex-column-day">
+          <div class="day-card">
+            <h2>Sunday</h2>
+          </div>
+          <div v-for="time in times" class="time-card">
+            <p>{{ time.hour }}</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.7/dist/vue.js"></script>
-    <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.7/dist/vue.js"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>
