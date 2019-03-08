@@ -1,48 +1,79 @@
 body {
-  background-color: #EEEEEE;
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    text-align: center
 }
 
 .display {
-  width: 100vw;
+    width: 100vw;
 }
 
 .flex-table {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 60px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 60px 100px;
 }
 
 .flex-column-day {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: -320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .day-card {
-  width: 120px;
-  background-color: white;
-  align-self: center;
-  text-align: center;
-  margin-bottom: 10px;
+    width: 120px;
+    background-color: white;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .time-card {
-  width: 60px;
-  background-color: white;
-  align-self: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 10px;
+    width: 60px;
+    background-color: white;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 p {
-  text-align: center;
+    text-align: center;
+    margin: 5px;
 }
 
 h2 {
-  font-size: 20px;
+    font-size: 20px;
+}
+
+.selected {
+    background-color: #27ff2e;
+}
+
+footer {
+    margin-top: auto;
+    padding: .5em;
+    width: 100%;
+    background-color: rgb(109, 109, 109);
+    text-align: center;
+}
+
+footer p,
+a {
+    color: white;
+    text-decoration: none;
+    font-size: x-small;
+}
+
+footer a:hover {
+    text-decoration-color: white;
+    text-decoration: underline;
+    color: white;
 }
